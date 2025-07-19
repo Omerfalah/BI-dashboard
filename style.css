@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    background: #fff5f5;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #222;
+  }
+  
+  header {
+    background: #d40000;
+    color: #fff;
+    padding: 40px 0 35px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(212,0,0,0.3);
+    position: relative;
+  }
+  
+  .ferrari-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 110px;
+    height: auto;
+    background: #fff200;
+    border-radius: 6px;
+    border: 1px solid #222;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 2px 3px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #fff200, 2px 2px 0 #222;
+  }
+  
+  h1#dashboard-title {
+    font-family: 'FerroRossoRegular', 'Ferro Rosso', FerroRosso, Arial, sans-serif !important;
+    font-weight: normal;
+  }
+  
+  .header-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgba(255,242,0,0.2);
+    border: 1px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .header-nav a:hover {
+    background: rgba(255,242,0,0.3);
+    border-color: #fff200;
+    transform: translateY(-1px);
+  }
+  
+
+  
+  .language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,242,0,0.3);
+  }
+  
+  .about-section {
+    background: #fff;
+    margin: 0;
+    padding: 40px 0;
+    border-bottom: 3px solid #d40000;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .driver-image {
+    flex: 0 0 300px;
+  }
+  
+  .driver-photo {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #d40000;
+    box-shadow: 0 4px 12px rgba(212,0,0,0.3);
+  }
+  
+  .driver-info {
+    flex: 1;
+  }
+  
+  .driver-info h2 {
+    color: #d40000;
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .driver-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+    color: #333;
+  }
+  
+  .stats-highlight {
+    background: #fff200;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #d40000;
+  }
+  
+  .stats-highlight h3 {
+    color: #d40000;
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .stats-highlight ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .stats-highlight li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: 500;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  
+  .dashboard-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(212,0,0,0.15);
+    border-left: 6px solid #d40000;
+  }
+  
+  .dashboard-card h2 {
+    margin: 0 0 16px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #d40000;
+    letter-spacing: 0.5px;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  label, select, button {
+    font-size: 1rem;
+  }
+  
+  select, button {
+    border-radius: 4px;
+    border: 1.5px solid #d40000;
+    padding: 4px 10px;
+    margin-left: 8px;
+    background: #fff200;
+    color: #222;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  select:focus, button:focus {
+    border: 2px solid #222;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,242,0,0.3);
+  }
+  
+  select:hover, button:hover {
+    background: #ffe600;
+    transform: translateY(-1px);
+  }
+  
+  button[aria-pressed="true"] {
+    background: #d40000;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff200;
+  }
+  
+  button[aria-pressed="true"]:hover {
+    background: #b30000;
+  }
+  
+  footer {
+    text-align: center;
+    color: #d40000;
+    padding: 16px;
+    font-size: 14px;
+    background: #fff200;
+    border-top: 2px solid #d40000;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .driver-image {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .driver-photo {
+      height: 350px;
+    }
+    
+    .driver-info h2 {
+      font-size: 1.6rem;
+    }
+    
+    .driver-info p {
+      font-size: 1rem;
+    }
+    
+    .header-nav {
+      gap: 15px;
+    }
+    
+    .header-nav a {
+      font-size: 1rem;
+      padding: 6px 12px;
+    }
+    
+    .language-switcher {
+      top: 15px;
+      right: 15px;
+      padding: 4px 8px;
+      gap: 4px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      padding: 0 4px;
+    }
+    .dashboard-card {
+      padding: 12px;
+    }
+    h1 {
+      font-size: 1.3rem;
+    }
+    .ferrari-logo {
+      left: 8px;
+      width: 100px;
+    }
+    .about-container {
+      padding: 0 8px;
+    }
+    .driver-photo {
+      height: 280px;
+    }
+    .header-nav {
+      flex-direction: column;
+      gap: 8px;
+    }
+    .header-nav a {
+      font-size: 0.9rem;
+      padding: 4px 8px;
+    }
+  }
